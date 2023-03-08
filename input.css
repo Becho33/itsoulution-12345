@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-move-right {
+  animation: move-right 1s ease-in-out infinite;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.top-03px {
+  top: 0.3px;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+  background-image: url('https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form  {
+  width: 400px; /* set the width of the form */
+  margin: auto; /* center the form horizontally */
+  padding: 20px; /* add some padding around the form */
+  background-color: #f5f5f5; /* set the background color */
+  border-radius: 5px; /* add some rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* add a subtle box shadow */
+}
+
+form label {
+  display: block; /* make the label a block element */
+  margin-bottom: 10px; /* add some space between labels */
+  font-weight: bold; /* make the label text bold */
+}
+
+form input[type=text], 
+form input[type=email], 
+form textarea {
+  width: 100%; /* make the input fields and textarea full width */
+  padding: 10px; /* add some padding inside the input fields and textarea */
+  border-radius: 5px; /* add some rounded corners */
+  border: none; /* remove the default border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* add a subtle box shadow */
+  margin-bottom: 20px; /* add some space between input fields and textarea */
+}
+
+form input[type=submit] {
+  background-color: #4CAF50; /* set the background color */
+  color: #fff; /* set the text color */
+  padding: 10px 20px; /* add some padding inside the button */
+  border: none; /* remove the default border */
+  border-radius: 5px; /* add some rounded corners */
+  cursor: pointer; /* change the cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* add a smooth transition */
+}
+
+form input[type=submit]:hover {
+  background-color: #3e8e41; /* change the background color on hover */
+}
+
